@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
+import styles from './FeedbackOptions.module.scss';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    <div>
+    <div className={styles.feet}>
       {options.map(option => (
         <button
           key={option}

@@ -1,18 +1,16 @@
 import PropTypes from 'prop-types';
-import { List } from './Statistics.styled';
+import styles from './Statistics.module.scss';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
-    
-      <List>
-        <li>Statistics</li>
-        <li>good: {good} </li>
-        <li>neutral: {neutral}</li>
-        <li>bad: {bad} </li>
-        <li>Total feedback: {total}</li>
-        <li>Positive feedback percentage: {positivePercentage}%</li>
-      </List>
-   
+    <ul className={styles.list}>
+      <li>Statistics</li>
+      <li>good: {good} </li>
+      <li>neutral: {neutral}</li>
+      <li>bad: {bad} </li>
+      <li>Total feedback: {total}</li>
+      <li>Positive feedback percentage: {positivePercentage}%</li>
+    </ul>
   );
 };
 
